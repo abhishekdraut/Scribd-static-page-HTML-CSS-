@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Serif:ital@1&family=Poppins:wght@700&display=swap");
+
 .site_header {
-    font-family: sans-serif;
-  min-height: 60px;
+  font-family: sans-serif;
+  /* min-height: 60px; */
   background-color: rgb(0, 41, 63);
 }
+
 .site_header.items {
   margin-left: 5%;
   margin-right: 5%;
@@ -16,6 +18,7 @@
   border-color: aliceblue;
   border-style: solid;
 }
+
 .site_header.burger {
   display: flex;
   flex-direction: column;
@@ -29,22 +32,73 @@
   display: flex;
   align-items: center;
 }
+
 .site_header-logo-image {
-  height: 40px;
+  height: 25px;
 }
+
+.site_header.btn.btn-light {
+  margin-left: auto;
+  height: 40px;
+  width: fit-content;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   font-size: 18px;
   font-weight: 700;
-  margin-left: auto;
+  height: 40px;
   display: flex;
   align-items: center;
   border: white solid;
   color: white;
   border-width: 1px;
-  border-radius: 10px;
-  width: 100px;
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   text-decoration: none;
   overflow-wrap: break-word;
+}
+.hero-region-background {
+  background-image: url(https://s-f.scribdassets.com/webpack/assets/images/hero_banner/1190_en@2x.fd85dc5e.jpg);
+  height: 416px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.hero_region {
+  font-family: sans-serif;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  padding:60px 0;
+  
+  
+}
+.solid-btn {
+  background-color: white;
+  color: rgb(13, 37, 50);
+  
+}
+.hero-btn {
+  width: fit-content;
+  margin-top: 25px;
+}
+.hero_region_header{
+    font-size:  46px;
+    font-weight: bold;
+    
+}
+.hero_region_header-two{
+    font-family: 'PT Serif';
+    font-size:22px;
+    margin-top:25px
+}
+.hero_region_header-three{
+    margin-top:10px;
 }
