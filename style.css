@@ -23,6 +23,9 @@
   gap: 10px;
   display: flex;
 }
+a {
+  text-decoration: none;
+}
 .burger.slice {
   border-width: 0.5px;
   border-color: aliceblue;
@@ -220,51 +223,195 @@
     font-size: 12px;
   }
 }
-/* =============================== */
-/* book container  page */
-.third_page-background{
-  height:534px ;
-  background-color: rgb(0,52,88);
+/* =======================================================================*/
+/*==================== book container  page=============================== */
+.third_page-background {
+  min-height: 534px;
+  background-color: rgb(0, 52, 88);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.third_page_books_container{
-  
+.third_page_books_container {
   display: flex;
-  padding-top:30px;
+  padding: 30px 7px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 879px;
   list-style: none;
   gap: 5px;
-  
 }
 
-.book_image{
-  height: 121px ;
+.book_image {
+  height: 121px;
   width: 90px;
-
 }
-.third_page_header{
+.third_page_header {
   font-weight: bold;
   font-family: var(--font-tertiory);
   font-size: 45px;
   color: white;
-  
-
-
+  text-align: left;
 }
-.book_container_btn{
-  font-family: var(--font-tertiory);
-  font-size:25px;
-  height:45px;
+@media (max-width: 768px) {
+  .third_page_header {
+    padding-left: 20px;
+  }
 }
-.hero_region_header-three_book-container{
-  padding-top: 15px;
+.book_container_btn {
   font-family: var(--font-tertiory);
-  font-size:17px;
-  color:white;
+  font-size: 25px;
+  height: 45px;
+}
+.hero_region_header-three_book-container {
+  padding: 15px 0;
+  font-family: var(--font-tertiory);
+  font-size: 17px;
+  color: white;
+}
+.counter_container_background {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.counter_container {
+  display: flex;
+  gap: 130px;
+}
+.coounter_container-first {
+  font-size: 45px;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  text-align: center;
+}
+.coounter_container-second {
+  font-size: 17px;
+  font-family: var(--font-tertiory);
+  color: rgba(0, 0, 0, 0.61);
+}
+@media (max-width: 768px) {
+  .counter_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 0;
+  }
+}
+/*========================= Category page ==============*/
+.category_name {
+  min-height: 120px;
+  background-color: rgba(243, 239, 239, 0.479);
+  color: rgba(0, 0, 0, 0.74);
+  font-weight: bold;
+  font-family: var(--font-tertiory);
+  font-size: 42px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/* ===============Card Container=====================  */
+.card_layout.background {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+  gap: 17px;
+}
+.card_image {
+  max-height: 109px;
+}
+.card {
+  padding: 0 20px;
+  gap: 20px;
+  max-width: 709px;
+  display: flex;
+  min-height: 110px;
+}
+.card_details {
+  font-family: var(--font-tertiory);
+}
+.header {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.details {
+  text-align: left;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.637);
+}
+.aurther {
+  color: rgba(0, 0, 0, 0.363);
+}
+
+/* =============Big card Container============== */
+.big_card_container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.card.big {
+  display: flex;
+
+  max-width: 1084px;
+}
+.card_image.big {
+  max-width: 217px;
+  max-height: 215px;
+}
+.header.big {
+  font-size: 33px;
+  word-spacing: 5px;
+  padding-bottom: 30px;
+}
+.aurther.big {
+  padding-bottom: 30px;
+}
+.border.big {
+  margin-bottom: 40px;
+  min-width: 2px;
+  height: 0.2px;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.205);
+}
+.right_side.details.header {
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 30px;
+}
+.right_side.details .summery {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.973);
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.details.description {
+  font-size: 17px;
+  padding-bottom: 30px;
+}
+.pill{
+  border: 2px solid black ;
+  border-radius:5px;
+  padding: 10px;
+    overflow-wrap: break-word;
+}
+@media (max-width: 768px) {
+  .card.big {
+    flex-direction: column;
+  }
+  .details.description {
+    font-size: 15px;
+    
+  }
 }
