@@ -354,7 +354,7 @@ a {
 
 /* =============Big card Container============== */
 .big_card_container {
-  padding-top: 50px;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
 }
@@ -400,11 +400,20 @@ a {
   font-size: 17px;
   padding-bottom: 30px;
 }
-.pill{
-  border: 2px solid black ;
-  border-radius:5px;
-  padding: 10px;
-    overflow-wrap: break-word;
+.pills{
+  display: flex;
+  gap:10px 30px;
+  flex-wrap: wrap;
+}
+.pill {
+  border: 0.1px solid rgba(0, 0, 0, 0.103);
+  text-align: center;
+  border-radius: 20px;
+  padding:5px 20px;
+  font-size:17px;
+  color: black;
+  font-weight: bold;
+  overflow-wrap: break-word;
 }
 @media (max-width: 768px) {
   .card.big {
@@ -412,6 +421,5 @@ a {
   }
   .details.description {
     font-size: 15px;
-    
   }
 }
