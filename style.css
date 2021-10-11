@@ -1,18 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Serif:ital@1&family=Poppins:wght@700&display=swap");
-
+:root {
+  --font-primary: "sans-serif";
+  --font-secendory: "PT Serif";
+  --font-tertiory: "Lato";
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.body {
+  padding: 0;
+}
 .site_header {
   font-family: sans-serif;
   /* min-height: 60px; */
   background-color: rgb(0, 41, 63);
 }
-
 .site_header.items {
   margin-left: 5%;
   margin-right: 5%;
   gap: 10px;
   display: flex;
 }
-
 .burger.slice {
   border-width: 0.5px;
   border-color: aliceblue;
@@ -27,16 +37,13 @@
   width: 25px;
   justify-content: center;
 }
-
 .site_header-logo {
   display: flex;
   align-items: center;
 }
-
 .site_header-logo-image {
   height: 25px;
 }
-
 .site_header.btn.btn-light {
   margin-left: auto;
   height: 40px;
@@ -44,7 +51,6 @@
   margin-top: 3px;
   margin-bottom: 3px;
 }
-
 .btn {
   display: flex;
   justify-content: center;
@@ -57,9 +63,7 @@
   color: white;
   border-width: 1px;
   border-radius: 4px;
-  padding-left: 32px;
-  padding-right: 32px;
-
+  padding: 0 32px;
   text-decoration: none;
   overflow-wrap: break-word;
 }
@@ -76,29 +80,144 @@
   margin: 0% 5%;
   display: flex;
   flex-direction: column;
-  padding:60px 0;
-  
-  
+  padding: 60px 0;
 }
 .solid-btn {
   background-color: white;
   color: rgb(13, 37, 50);
-  
 }
 .hero-btn {
   width: fit-content;
   margin-top: 25px;
 }
-.hero_region_header{
-    font-size:  46px;
+.hero_region_header {
+  font-size: 46px;
+  font-weight: bold;
+}
+.hero_region_header-two {
+  font-family: "PT Serif";
+  font-size: 22px;
+  margin-top: 25px;
+}
+.hero_region_header-three {
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .hero_region_header {
+    font-size: 30px;
     font-weight: bold;
-    
+  }
+  .hero_region {
+    padding: 100px 0;
+  }
+  .site_header.btn.btn-light {
+    height: 30px;
+  }
+  .btn {
+    height: 30px;
+  }
 }
-.hero_region_header-two{
-    font-family: 'PT Serif';
-    font-size:22px;
-    margin-top:25px
+/*=================== second page */
+
+.second_page {
+  margin: 0 5%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.hero_region_header-three{
-    margin-top:10px;
+.second_page_texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.second_page_header {
+  font-size: 42px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.664);
+  margin-bottom: 12px;
+}
+.second_page_subheader {
+  text-align: center;
+  font-size: 19px;
+  width: 550px;
+
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.548);
+}
+.second_page-mid-section {
+  display: flex;
+  gap: 20px;
+  font-family: sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  text-overflow: inherit;
+  max-width: 1050px;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.second_page_box_image {
+  height: 50px;
+}
+.mid-section.second {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mid-section.third {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.514);
+}
+.second_page_end-section.background {
+  background-color: rgb(201, 204, 204);
+  padding: 5% 5%;
+}
+.second_page_end-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second_page-footer {
+  font-family: var(--font-secendory);
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 25px;
+}
+.second_page_footer.light {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* second_page mobile */
+@media (max-width: 768px) {
+  .second_page-mid-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .second_page_header {
+    font-size: 30px;
+    text-align: left;
+  }
+  .second_page_subheader {
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+  }
+  .second_page_texts {
+    display: flex;
+  }
+  .second_page_end-section {
+    font-size: 30px;
+    text-align: center;
+  }
+  .second_page_footer.light {
+    font-size: 12px;
+  }
+}
+/* =============================== */
