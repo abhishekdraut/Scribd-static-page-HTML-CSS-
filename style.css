@@ -81,7 +81,52 @@ a {
   text-decoration: none;
   overflow-wrap: break-word;
 }
+.sidebar {
+  font-family: var(--font-tertiory);
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  background: black;
+  margin-left: -300px;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+.x{
+  
+  text-align: center;
+  color: white;
+}
+.sidebar.active {
+  margin-left: 0;
+}
 
+.sidebar ul li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+
+.sidebar__toggle-sidebar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  
+}
+.sidebar_menu{
+padding-top:50px;
+}
+.overlay--show{
+  top:0;
+  height: 768px;
+  width: 100%;
+  position:fixed;
+  z-index:2;
+  background-color:rgba(0, 0, 0, 0.466);
+  
+
+}
+/*============================= hero region ===================*/
 .hero-region-background {
   background-image: url(https://s-f.scribdassets.com/webpack/assets/images/hero_banner/1190_en@2x.fd85dc5e.jpg);
   height: 416px;
