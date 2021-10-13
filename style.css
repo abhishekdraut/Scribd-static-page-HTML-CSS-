@@ -591,6 +591,9 @@ padding-top:50px;
   color: rgba(0, 0, 0, 0.726);
   padding-bottom: 20px;
 }
+.footer_images{
+  max-height: 40px;
+}
 
 @media (max-width: 768px) {
   .footer_container {
